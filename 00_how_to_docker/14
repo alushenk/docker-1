@@ -1,0 +1,12 @@
+docker container run -d \
+    -p 8080:80 \
+    --name lair \
+    --link spawning-pool:mysql \
+    -e WORDPRESS_DB_HOST=mysql:3306 \
+    -e WORDPRESS_DB_USER=root \
+    -e WORDPRESS_DB_PASSWORD=Kerrigan \
+    -e WORDPRESS_DB_NAME=zerglings \
+    wordpress
+
+
+# WORDPRESS_DB_USER=root by default

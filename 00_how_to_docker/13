@@ -1,0 +1,1 @@
+docker container inspect spawning-pool -f {{.Config.Env}}
