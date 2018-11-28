@@ -9,6 +9,10 @@ docker container run -dit \
     
 docker exec Abathur pip install Flask
 
+# https://docs.docker.com/machine/reference/mount/#example
+# mkdir $HOME/root_abathur
+# docker-machine mount Char:/char_abathur $HOME/root_abathur
+
 echo "from flask import Flask\n\
 app = Flask(__name__)\n\
 @app.route('/')\n\
